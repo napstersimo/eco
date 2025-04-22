@@ -1,0 +1,247 @@
+/* 
+ * Fichier: assets/css/style.css
+ * Styles personnalisés pour le système de gestion d'école
+ */
+
+/* Styles généraux */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Personnalisation de l'en-tête */
+header {
+    border-bottom: 3px solid #0056b3;
+}
+
+/* Personnalisation de la barre de navigation */
+.navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+/* Personnalisation des cartes */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+    border-bottom: none;
+}
+
+.card-footer {
+    border-radius: 0 0 10px 10px !important;
+    border-top: none;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Couleurs personnalisées pour le tableau de bord */
+.bg-primary-dark {
+    background-color: #003d7a;
+}
+
+.bg-success-dark {
+    background-color: #1b6d3c;
+}
+
+.bg-info-dark {
+    background-color: #0f7384;
+}
+
+.bg-warning-dark {
+    background-color: #ce8300;
+}
+
+/* Style pour la sidebar */
+.list-group-item {
+    border: none;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 2px;
+    border-radius: 5px !important;
+}
+
+.list-group-item.active {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.list-group-item-primary {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Personnalisation des tableaux */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-dark th {
+    background-color: #343a40 !important;
+    border-color: #454d55 !important;
+}
+
+/* Personnalisation des formulaires */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-select {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Personnalisation des boutons */
+.btn {
+    border-radius: 5px;
+    padding: 0.375rem 0.75rem;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+.btn-success {
+    background-color: #198754;
+}
+
+.btn-success:hover {
+    background-color: #157347;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #bb2d3b;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+}
+
+.btn-warning:hover {
+    background-color: #ffca2c;
+}
+
+.btn-info {
+    background-color: #0dcaf0;
+}
+
+.btn-info:hover {
+    background-color: #31d2f2;
+}
+
+/* Personnalisation des badges */
+.badge {
+    border-radius: 5px;
+    padding: 0.35em 0.65em;
+    font-weight: 500;
+}
+
+/* Personnalisation du pied de page */
+footer {
+    margin-top: 30px;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+/* Personnalisation pour le mode d'affichage RTL */
+.text-end {
+    text-align: right !important;
+}
+
+.pe-3 {
+    padding-right: 1rem !important;
+}
+
+.ms-2 {
+    margin-left: 0.5rem !important;
+}
+
+.ms-auto {
+    margin-left: auto !important;
+}
+
+/* Style pour les pages de détails */
+.profile-header {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.profile-info {
+    padding: 15px;
+}
+
+/* Animations */
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 15px;
+    }
+    
+    .profile-avatar {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Style spécifique pour la page de connexion */
+.login-card {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
